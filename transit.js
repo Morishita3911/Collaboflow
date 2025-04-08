@@ -10,6 +10,7 @@
         var hasValue = false; // どれか1つに値があるか
         
         alert(tableData);
+        console.log(tableData);
         exit;
 
         // 明細をループでチェック
