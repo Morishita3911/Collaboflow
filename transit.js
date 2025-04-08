@@ -8,7 +8,10 @@
         var errorFlag = false; // エラー判定フラグ
         var fieldIds = ['fid21', 'fid29', 'fid30', 'fid31']; // 明細のパーツID
         var hasValue = false; // どれか1つに値があるか
+        
         alert(tableData);
+        exit;
+
         // 明細をループでチェック
         tableData.forEach(function (row) {
             // 各行のフィールドをチェック
@@ -19,6 +22,7 @@
                 }
             });
         });
+        
         for (var i = 0; i < fieldIds.length; i++) {
             var field = Collaboflow.getFieldValue(fieldIds[i]); // フィールドの値を取得
             if (field && field.trim() !== '') {
