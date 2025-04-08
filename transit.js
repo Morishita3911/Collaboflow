@@ -1,6 +1,6 @@
 (function () {
     // フォームの送信ボタンが押されたときの処理
-    Collaboflow.events.on('requestSend', function (event) {
+    Collaboflow.events.on('request.input.check', function (event) {
         var errorFlag = false; // エラー判定フラグ
         var fieldIds = ['fid21', 'fid29', 'fid30', 'fid31']; // 明細のパーツID
         var hasValue = false; // どれか1つに値があるか
